@@ -39,7 +39,7 @@ def get_news(category: str) -> list:
         search_tool = get_search_tool()
         tools = [search_tool]
         search_results = search_tool.run(search_query)
-        print(f"web search results---> {search_results}.....")  
+        # print(f"web search results---> {search_results}.....")  
         
         # Step 2: Ask LLM to summarize results as JSON
         full_prompt = f"""
@@ -55,7 +55,7 @@ Return ONLY a valid JSON array. No markdown, no code blocks, just raw JSON.
         llm = get_llm()
         response = llm.invoke(full_prompt)
         response_text = response.content.strip()
-        print(f"LLM response--- {response_text[0]}...") 
+        # print(f"LLM response--- {response_text[0]}...") 
 
         # Clean response — remove markdown if present
         if "```json" in response_text:
