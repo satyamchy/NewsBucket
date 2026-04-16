@@ -1,49 +1,45 @@
 export default function LoadingSpinner({ category }) {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16 text-center">
+    <div className="max-w-5xl mx-auto px-4 py-6">
 
-      {/* Animated dots */}
-      <div className="flex justify-center gap-2 mb-6">
-        {[0, 1, 2].map((i) => (
-          <div
-            key={i}
-            className="w-3 h-3 bg-black dark:bg-white rounded-full
-                       animate-bounce"
-            style={{ animationDelay: `${i * 0.15}s` }}
-          />
-        ))}
+      {/* Header skeleton */}
+      <div className="flex items-center gap-3 mb-5">
+        <div className="w-1 h-5 bg-red-300 rounded animate-pulse" />
+        <div className="h-4 w-32 bg-gray-200 rounded animate-pulse" />
       </div>
 
-      <p className="font-playfair text-2xl text-black dark:text-white mb-2">
-        Fetching {category} News...
-      </p>
-      <p className="text-sm text-gray-500 dark:text-gray-400 font-sans">
-        AI is searching the web and summarizing stories for you
-      </p>
-
-      {/* Skeleton cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-                      gap-6 mt-10 text-left">
-        {[1, 2, 3, 4, 5].map((i) => (
+      {/* 2 col skeleton cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {[1, 2, 3, 4].map((i) => (
           <div
             key={i}
-            className="border border-gray-200 dark:border-gray-700
-                       bg-white dark:bg-gray-900 p-5"
+            className="bg-white border border-gray-200 rounded-sm
+                       overflow-hidden flex"
           >
-            <div className="h-1 bg-gray-200 dark:bg-gray-700 mb-4 animate-pulse" />
-            <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded
-                            w-1/4 mb-4 animate-pulse" />
-            <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded
-                            w-full mb-2 animate-pulse" />
-            <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded
-                            w-3/4 mb-4 animate-pulse" />
-            <div className="h-3 bg-gray-100 dark:bg-gray-800 rounded
-                            w-full mb-2 animate-pulse" />
-            <div className="h-3 bg-gray-100 dark:bg-gray-800 rounded
-                            w-5/6 animate-pulse" />
+            {/* Image skeleton */}
+            <div className="w-40 h-36 bg-gray-200 animate-pulse flex-shrink-0" />
+
+            {/* Text skeleton */}
+            <div className="flex-1 p-4">
+              <div className="h-3 w-16 bg-gray-200 rounded
+                              animate-pulse mb-2" />
+              <div className="h-4 w-full bg-gray-200 rounded
+                              animate-pulse mb-1" />
+              <div className="h-4 w-4/5 bg-gray-200 rounded
+                              animate-pulse mb-3" />
+              <div className="h-3 w-full bg-gray-100 rounded
+                              animate-pulse mb-1" />
+              <div className="h-3 w-3/4 bg-gray-100 rounded
+                              animate-pulse" />
+            </div>
           </div>
         ))}
       </div>
+
+      {/* Loading text */}
+      <p className="text-center text-sm text-gray-400 mt-6">
+        AI is searching the web for latest {category} news...
+      </p>
 
     </div>
   )

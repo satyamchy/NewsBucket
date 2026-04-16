@@ -7,18 +7,23 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # Categories supported
 CATEGORIES = [
-    "India",
-    "World",
-    "USA",
-    "EUROPE",
-    "WEST ASIA",
-    "WARS",
-    "Sports",
-    "Technology",
-    "Business",
-    "Entertainment",
-    "Health"
+ "Top Stories",
+ "India",
+ "World",
+ "USA",
+ "Europe",
+ "Wars",
+ "West Asia",
+ "Politics",
+ "Sports",
+ "Technology",
+ "AI",
+ "Business",
+ "Markets",
+ "Entertainment",
+ "Health",
+ "Weather"
 ]
 
 # Cache duration in seconds (30 minutes)
-CACHE_DURATION = 1800
+CACHE_DURATION = 3600

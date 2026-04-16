@@ -1,51 +1,52 @@
-import { FiSun, FiMoon } from 'react-icons/fi'
+import { FiMenu, FiX } from 'react-icons/fi'
 import { MdNewspaper } from 'react-icons/md'
 
-export default function Navbar({ darkMode, setDarkMode }) {
-  const today = new Date().toLocaleDateString('en-US', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })
-
+export default function Navbar({ sidebarOpen, setSidebarOpen }) {
   return (
-    <header className="border-b-2 border-black dark:border-white">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50
+                 h-16 px-4 md:px-6
+                 bg-slate-100 border-b border-slate-300
+                 shadow-sm flex items-center gap-4"
+    >
+      {/* Left: Hamburger */}
+      <button
+        onClick={() => setSidebarOpen(!sidebarOpen)}
+        className="flex items-center gap-2 text-slate-700
+                   hover:text-slate-900 transition-colors"
+      >
+        {sidebarOpen ? <FiX size={22} /> : <FiMenu size={22} />}
+        <span className="text-sm font-medium hidden sm:block">
+          Menu
+        </span>
+      </button>
 
-      {/* Top bar */}
-      <div className="bg-black dark:bg-white py-1 px-6 flex justify-between items-center">
-        <p className="text-white dark:text-black text-xs font-sans">
-          {today}
-        </p>
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="text-white dark:text-black hover:opacity-70 transition-opacity"
-        >
-          {darkMode
-            ? <FiSun size={16} />
-            : <FiMoon size={16} />
-          }
-        </button>
-      </div>
+      {/* Center: Brand */}
+      <div className="flex-1 flex justify-center items-center gap-3">
+        <MdNewspaper
+          size={30}
+          className="text-emerald-700"
+        />
 
-      {/* Logo */}
-      <div className="text-center py-6 px-6 border-b border-gray-300 dark:border-gray-600">
-        <div className="flex items-center justify-center gap-2 mb-1">
-          <MdNewspaper
-            size={36}
-            className="text-black dark:text-white"
-          />
-          <h1 className="font-playfair text-5xl md:text-7xl font-extrabold
-                         text-black dark:text-white tracking-tight">
+        <div className="text-center">
+          <h1
+            className="font-playfair text-3xl md:text-4xl font-extrabold
+                       text-slate-900 tracking-tight leading-none"
+          >
             NewsBucket
           </h1>
+
+          <p
+            className="text-[10px] md:text-xs uppercase tracking-[0.28em]
+                       text-slate-500 mt-1"
+          >
+                      AI-Powered News from Across the Web
+          </p>
         </div>
-        <p className="text-gray-500 dark:text-gray-400 text-sm font-sans
-                      tracking-widest uppercase mt-2">
-          AI-Powered News from Across the Web
-        </p>
       </div>
 
-    </header>
+      {/* Right spacer for balance */}
+      <div className="w-16 sm:w-20" />
+    </nav>
   )
 }
