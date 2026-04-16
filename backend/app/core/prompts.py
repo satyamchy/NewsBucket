@@ -24,7 +24,8 @@ Format your response as a valid JSON array like this:
     "summary": "3-5 line summary of the story here.",
     "source": "Source website name",
     "category": "{category}",
-    "time": "X hours ago or today"
+    "url": "https://link-to-full-article.com",
+    "time": "exact date or X hours ago or today"
   }}
 ]
 

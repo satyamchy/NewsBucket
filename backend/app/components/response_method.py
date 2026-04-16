@@ -30,7 +30,7 @@ def get_news(category: str) -> list:
     
     # Use simple LLM chain approach
     # Search first, then summarize
-    search_query = f"latest {category} news India world headlines  {__import__('datetime').date.today().strftime('%B %Y')}"
+    search_query = f"latest {category} news headlines  {__import__('datetime').date.today().strftime('%B %Y')}"
     # print(f"search query for duckduckgo--- {search_query}")
 
     try:
@@ -39,7 +39,7 @@ def get_news(category: str) -> list:
         search_tool = get_search_tool()
         tools = [search_tool]
         search_results = search_tool.run(search_query)
-        # print(f"search result of duckduckgo--- {search_results[:500]}...")  # Print first 500 chars of search results
+        print(f"web search results---> {search_results}.....")  
         
         # Step 2: Ask LLM to summarize results as JSON
         full_prompt = f"""
@@ -54,9 +54,9 @@ Return ONLY a valid JSON array. No markdown, no code blocks, just raw JSON.
         
         llm = get_llm()
         response = llm.invoke(full_prompt)
-        # print(f"LLM response--- {response.content[:500]}...")  # Print first 500 chars of LLM response
         response_text = response.content.strip()
-        
+        print(f"LLM response--- {response_text[0]}...") 
+
         # Clean response — remove markdown if present
         if "```json" in response_text:
             response_text = response_text.split("```json")[1].split("```")[0].strip()
@@ -65,7 +65,7 @@ Return ONLY a valid JSON array. No markdown, no code blocks, just raw JSON.
         
         # Parse JSON
         articles = json.loads(response_text)
-        
+
         # Save to cache
         cache[cache_key] = (articles, current_time)
         
