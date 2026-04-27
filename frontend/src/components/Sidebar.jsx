@@ -5,50 +5,31 @@ const CATEGORIES = [
   { name: 'USA', emoji: '🇺🇸' },
   { name: 'Europe', emoji: '🇪🇺' },
   { name: 'West Asia', emoji: '🌐' },
-  { name: 'China', emoji: '🇨🇳' },
-  { name: 'Pakistan', emoji: '🇵🇰' },
-  { name: 'Russia', emoji: '🇷🇺' },
 
   { name: 'Wars', emoji: '⚔️' },
   { name: 'Politics', emoji: '🏛️' },
+  { name: 'Sports', emoji: '🏏' },
+  { name: 'Technology', emoji: '💻' },
+  { name: 'AI', emoji: '🤖' },
+  { name: 'Business', emoji: '📈' },
+  { name: 'Markets', emoji: '📊' },
+  { name: 'Entertainment', emoji: '🎬' },
+  { name: 'Weather', emoji: '🌦️' },
+  { name: 'Health', emoji: '⚕️' },
+
+  { name: 'Startups', emoji: '🚀' },
+  { name: 'Science', emoji: '🔬' },
   { name: 'Elections', emoji: '🗳️' },
   { name: 'Crime', emoji: '🚨' },
-
-  { name: 'Sports', emoji: '🏏' },
   { name: 'Cricket', emoji: '🏏' },
   { name: 'Football', emoji: '⚽' },
   { name: 'Tennis', emoji: '🎾' },
-
-  { name: 'Technology', emoji: '💻' },
-  { name: 'AI', emoji: '🤖' },
-  { name: 'Startups', emoji: '🚀' },
-  { name: 'Science', emoji: '🔬' },
-
-  { name: 'Business', emoji: '📈' },
-  { name: 'Markets', emoji: '📊' },
   { name: 'Crypto', emoji: '₿' },
-
-  { name: 'Entertainment', emoji: '🎬' },
   { name: 'Bollywood', emoji: '🎥' },
   { name: 'Hollywood', emoji: '🎞️' },
-
-  { name: 'Health', emoji: '⚕️' },
   { name: 'Lifestyle', emoji: '🌿' },
   { name: 'Travel', emoji: '✈️' },
-
-  { name: 'Weather', emoji: '🌦️' },
-  { name: 'Education', emoji: '🎓' },
-  { name: 'Opinion', emoji: '✍️' }
 ]
-// const CATEGORIES = [
-//   { name: 'India', emoji: '🇮🇳' },
-//   { name: 'World', emoji: '🌍' },
-//   { name: 'Sports', emoji: '🏏' },
-//   { name: 'Technology', emoji: '💻' },
-//   { name: 'Business', emoji: '📈' },
-//   { name: 'Entertainment', emoji: '🎬' },
-//   { name: 'Health', emoji: '⚕️' },
-// ]
 
 import { FiX } from 'react-icons/fi'
 
@@ -118,10 +99,9 @@ export default function Sidebar({
                   w-full flex items-center gap-3
                   px-4 py-3 text-sm text-left
                   transition-colors duration-150
-                  ${
-                    selected === cat.name
-                      ? 'bg-emerald-50 text-emerald-700 font-semibold border-r-2 border-emerald-600'
-                      : 'text-slate-700 hover:bg-slate-100'
+                  ${selected === cat.name
+                    ? 'bg-emerald-50 text-emerald-700 font-semibold border-r-2 border-emerald-600'
+                    : 'text-slate-700 hover:bg-slate-100'
                   }
                 `}
               >

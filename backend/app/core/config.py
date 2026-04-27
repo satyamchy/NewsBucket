@@ -22,8 +22,21 @@ CATEGORIES = [
  "Markets",
  "Entertainment",
  "Health",
- "Weather"
+ "Weather",
+  "Startups",
+  "Science",
+  "Elections",
+  "Crime",
+  "Cricket",
+  "Football",
+  "Tennis",
+  "Crypto",
+  "Bollywood",
+  "Hollywood",
+  "Lifestyle",
+  "Travel"
+
 ]
 
 # Cache duration in seconds (30 minutes)
-CACHE_DURATION = 3600
+CACHE_DURATION = 7200

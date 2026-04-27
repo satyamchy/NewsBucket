@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.chat import router as chat_router
+from app.routes.portfolio_route import router as portfolio_route
 
 
 app = FastAPI(
@@ -19,6 +20,7 @@ app.add_middleware(
 )
 
 app.include_router(chat_router, prefix="/v1")
+app.include_router(portfolio_route, prefix="/api")
 
 # Health check
 @app.get("/")
