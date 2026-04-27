@@ -1,6 +1,7 @@
 import { FiAlertTriangle, FiRefreshCw } from 'react-icons/fi'
 
 export default function ErrorMessage({ message, onRetry }) {
+    console.error("Backend Error:", message)
   return (
     <div className="max-w-5xl mx-auto px-4 py-20 text-center">
       <FiAlertTriangle size={36} className="mx-auto mb-3 text-red-400" />
@@ -10,9 +11,6 @@ export default function ErrorMessage({ message, onRetry }) {
       <p className="text-sm text-gray-500 mb-5">
         {message || "The request timed out while connecting to the backend. Please check the server and try again."}
       </p>
-
-  
-
 
       <button
         onClick={onRetry}
