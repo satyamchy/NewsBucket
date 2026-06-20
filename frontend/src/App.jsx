@@ -21,18 +21,39 @@ export default function App() {
     setLoading(true)
     setError(null)
     setArticles([])
+  }
 
-    try {
-      const data = await fetchNews(category)
-      setArticles(data.articles)
-    } catch (err) {
-      setError(
-        err.response?.data?.detail ||
-          'Failed to connect to backend. Is it running?'
-      )
-    } finally {
-      setLoading(false)
+
+  try {
+    const data = await fetchNews(category);
+    setArticles(data.articles);
+
+  } catch (err) {
+    console.error("News Fetch Error:", err);
+
+    let errorMessage = "News service is currently unavailable.";
+
+    // If backend server is sleeping / offline
+    if (err.message?.includes("Failed to fetch") || err.message?.includes("Network Error")) {
+      errorMessage = "Unable to connect to backend server. It may be sleeping or not started yet. Free hosting instances can take 30–60 seconds to wake up.";
+
+      // If backend returned proper response error
+    } else if (err.response) {
+      errorMessage = `Backend responded with status ${err.response.status}${err.response.statusText ? " " + err.response.statusText : ""}`;
+
+      // If backend sent custom detail
+      if (err.response.data?.detail) {
+        errorMessage += ` - ${err.response.data.detail}`;
+      }
+      // Unknown issue
+    } else {
+      errorMessage = `Unexpected error: ${err.message}`;
     }
+
+    setError(errorMessage);
+
+  } finally {
+    setLoading(false);
   }
 
   const handleCategorySelect = (category) => {
