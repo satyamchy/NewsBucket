@@ -1,10 +1,19 @@
 fastapi
 uvicorn
+pydantic
+
+# LangChain + Groq
 langchain
 langchain-community
 groq
 langchain-groq
 duckduckgo-search
 python-dotenv
-pydantic
+
 ddgs
+apscheduler
+
+# ChromaDB + embeddings
+chromadb
+sentence-transformers
+ 
