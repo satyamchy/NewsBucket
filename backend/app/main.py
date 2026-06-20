@@ -1,9 +1,13 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes.chat import router as chat_router
+from app.routes.newsBucket import router as newsbucket_router
 from app.routes.portfolio_route import router as portfolio_route
+from app.routes.vectorDB_chat_route import router as vectorDB_chat_route
+from apscheduler.schedulers.background import BackgroundScheduler
+import requests
+scheduler = BackgroundScheduler()
 
-
+# ── App setup ─────────────────────────────────────────────────────────────────
 app = FastAPI(
     title="NewsBucket API",
     description="AI-powered news aggregator backend",
@@ -19,8 +23,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(chat_router, prefix="/v1")
+app.include_router(newsbucket_router, prefix="/v1")
 app.include_router(portfolio_route, prefix="/api")
+app.include_router(vectorDB_chat_route, prefix="/api/messages")
 
 # Health check
 @app.get("/")
@@ -30,9 +35,23 @@ def root():
         "version": "1.0.0"
     }
 
+def ping_api():
+    response = requests.get( "https://newsbucket-backend.onrender.com/api/" or "http://127.0.0.1:8000/")
+    print(response.json())
+
+scheduler.add_job(
+    ping_api,
+    trigger="cron",
+    hour="8,10,12,14,16,18,20",
+    minute=0
+)
+
+scheduler.start()
+
 
 # cd Desktop\newsbucket\backend
 # venv\Scripts\activate
+# python -m app.portfolio.ingest
 # uvicorn app.main:app --reload
 # {
 #   "query": "Latest AI trends in 2026"

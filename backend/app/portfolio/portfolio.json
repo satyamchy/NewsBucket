@@ -1,0 +1,449 @@
+{
+  "hero": {
+    "availability": "Open to Opportunities",
+    "name": "Satyam Kumar",
+    "roles": [
+      "Building Scalable Data & Web Solutions"
+    ],
+    "role2": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "AI Builder"
+    ],
+    "bio": "Software Engineer with hands-on experience in creating data pipelines using Snowflake, Power BI, ETL, MERN Stack, and AI-powered applications.",
+    "resumes": [
+      {
+        "label": "Software Engineer CV",
+        "link": "/software_engineer_cv.pdf"
+      }
+    ],
+    "github_link": "https://www.github.com/satyamchy/",
+    "linkedin_link": "https://www.linkedin.com/in/satyam1354/",
+    "email": "satyamkr1354@gmail.com",
+    "phone": "+91 9693342101",
+    "leetcode_link": "https://leetcode.com/u/satyachoudhary/",
+    "image": "https://avatars.githubusercontent.com/u/154831998?s=400&u=5583735495ebb450c49c7507a1b90e01fa3dccc7&v=4",
+    "badge": "11 Months Industry Experience",
+    "top_tech": [
+      "Snowflake",
+      "React",
+      "Node.js",
+      "AWS",
+      "Power BI",
+      "SQL",
+      "Python"
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "Software Engineer with 1+ year of experience building and shipping AI-powered products and full-stack applications in production. At Xornor Technology, I engineer LLM-driven workflows, REST APIs, and scalable backend services across real user-facing products. Earlier, at Innova Solutions, I built automated data pipelines processing enterprise-scale healthcare data for a Fortune 25 US client. Core stack: Python · React · Node.js · FastAPI · LangChain · PostgreSQL · AWS. Seeking a Software Engineer or AI Engineer role where I can build intelligent, scalable systems from the ground up",
+    "description2": "With hands-on industry experience at Innova Solutions, I've worked on ETL pipelines, Power BI analytics, Snowflake, Databricks, SQL, IICS, and AWS while also developing modern web applications using React, Node.js, FastAPI, and the MERN stack. I'm driven by continuous learning, clean engineering, and creating technology that delivers real value."
+  },
+  "skills": [
+    {
+      "category": "Backend Development",
+      "color": "sky",
+      "skills": [
+        "Java",
+        "Python",
+        "C++",
+        "SQL",
+        "FastAPI",
+        "Node.js",
+        "REST APIs",
+        "JWT Authentication",
+        "Socket Authentication",
+        "Multer",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis"
+      ]
+    },
+    {
+      "category": "Frontend Development",
+      "color": "emerald",
+      "skills": [
+        "React.js",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Vite"
+      ]
+    },
+    {
+      "category": "Cloud & Tools",
+      "color": "amber",
+      "skills": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Git",
+        "GitHub",
+        "Linux / Ubuntu WSL",
+        "Postman"
+      ]
+    },
+    {
+      "category": "AI / ML (Learning & Projects)",
+      "color": "rose",
+      "skills": [
+        "PyTorch",
+        "Machine Learning",
+        "Deep Learning",
+        "NLP Basics",
+        "LangChain",
+        "Vector Databases",
+        "Model Integration"
+      ]
+    },
+    {
+      "category": "Data Engineering & Analytics",
+      "color": "cyan",
+      "skills": [
+        "SQL",
+        "Snowflake",
+        "Databricks",
+        "IICS",
+        "dbt",
+        "ETL Pipelines",
+        "Data Warehousing",
+        "Power BI",
+        "Power Automate",
+        "Reporting Automation",
+        "Data Visualization"
+      ]
+    },
+    {
+      "category": "Other Skills",
+      "color": "violet",
+      "skills": [
+        "Problem Solving",
+        "Data Structures & Algorithms",
+        "Agile Development",
+        "Team Collaboration",
+        "Project Management"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": 3,
+      "title": "Software Engineer & AI Agents Engineer",
+      "company": "Xornor Technologies",
+      "period": "April 2026 - Present",
+      "description": "Working as a Software Engineer & AI Agents Engineer, building enterprise-scale web applications, AI-powered automation systems, intelligent workflows, and data-driven platforms. Contributing across full-stack development, backend architecture, AI integration, workflow automation, and scalable cloud-based solutions.",
+      "projects": [
+        {
+          "name": "Jira Worklog Performance Tracker",
+          "detail": "Developed and deployed a full-stack Jira Worklog Performance Tracker using React, Node.js, Express, PostgreSQL, Jira REST APIs, LangChain, OpenAI, and AWS. Automated worklog ingestion, project synchronization, and performance analytics for engineering teams and managers."
+        },
+        {
+          "name": "Performance Analytics & Reporting Dashboard",
+          "detail": "Built interactive dashboards and reporting systems to analyze productivity trends, resource utilization, project progress, and work allocation, replacing manual spreadsheet-based tracking with real-time analytics and actionable insights."
+        },
+        {
+          "name": "AI-Powered Worklog Intelligence",
+          "detail": "Designed AI-driven workflows using LangChain and OpenAI to analyze, classify, and summarize Jira worklog comments, automatically identifying suspicious entries, anomalies, and generating performance recommendations."
+        },
+        {
+          "name": "Automated Data Synchronization Pipelines",
+          "detail": "Implemented scalable data pipelines and scheduled automation jobs for continuous synchronization, intelligent worklog processing, and reporting across large numbers of projects, teams, and users."
+        },
+        {
+          "name": "KAI-LMS (AI-Powered Global Learning Management Platform)",
+          "detail": "Contributed to the development of a large-scale Learning Management System supporting students, instructors, and administrators with course management, assignments, discussions, announcements, grading, and academic performance tracking."
+        },
+        {
+          "name": "AI-Based Assignment Evaluation Engine",
+          "detail": "Developed AI-powered assessment workflows that evaluate student submissions using configurable rubric-based grading criteria, generate personalized feedback, assist educators in grading, and improve consistency in evaluation processes."
+        },
+        {
+          "name": "Academic Workflow & Learning Services",
+          "detail": "Engineered scalable backend services, APIs, and full-stack features supporting course delivery, assignment lifecycle management, student progress tracking, academic reporting, and personalized learning experiences."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Software Engineer Intern",
+      "company": "Innova Solutions",
+      "period": "May 2025 - March 2026",
+      "description": "Worked as a Software Engineer Intern at Innova Solutions, Hyderabad, delivering production-grade ETL pipelines, BI reporting solutions, and enterprise analytics systems for US healthcare clients. Gained strong hands-on experience in modern data engineering tools, automation platforms, cloud data warehouses, and large-scale business reporting environments.",
+      "projects": [
+        {
+          "name": "Power BI Reporting Solutions",
+          "detail": "Designed and developed interactive Power BI dashboards for KPI tracking, business insights, claim error monitoring, and operational reporting. Enabled faster decision-making through clear and dynamic visual analytics."
+        },
+        {
+          "name": "1800+ Files Data Consolidation Pipeline",
+          "detail": "Engineered an automated Power Query (M-Code) pipeline to ingest, standardize, clean, and merge 1,800+ monthly CSV files across 60+ report schemas into a unified dataset for enterprise reporting."
+        },
+        {
+          "name": "Legacy SAS to SQL Migration",
+          "detail": "Migrated legacy SAS-based reporting processes into optimized SQL workflows, improving automation, maintainability, and reporting efficiency for healthcare data operations."
+        },
+        {
+          "name": "Power Automate Workflow Automation",
+          "detail": "Built automated workflows using Power Automate for alerts, approvals, scheduled refresh notifications, and data quality mismatch reporting, significantly reducing manual effort."
+        },
+        {
+          "name": "Snowflake Cloud Data Warehouse",
+          "detail": "Completed hands-on internal training on Snowflake including warehouse tuning, clustering keys, zero-copy cloning, time travel, tasks, streams, stored procedures, and SQL optimization for scalable cloud analytics workloads."
+        },
+        {
+          "name": "IICS ETL Pipelines",
+          "detail": "Built practice ETL workflows using Informatica Intelligent Cloud Services (IICS) with parameterized mappings for multi-source data ingestion across cloud systems."
+        },
+        {
+          "name": "dbt Transformation Layer",
+          "detail": "Explored dbt for creating modular SQL transformation layers on top of Snowflake, including staging models, marts, reusable transformations, and analytics-ready datasets."
+        },
+        {
+          "name": "Databricks & SQL Operations",
+          "detail": "Used SQL and Databricks for querying datasets, supporting data analysis tasks, and handling large-scale structured data processing requirements."
+        },
+        {
+          "name": "AWS Cloud Exposure",
+          "detail": "Gained practical experience with AWS services such as storage and cloud infrastructure used in modern enterprise data workflows."
+        },
+        {
+          "name": "Healthcare Error Analytics System",
+          "detail": "Built derived datasets with metrics like Claim Age, SLA, Entry Date, Completion Date, and Key IDs for monitoring Medicaid & Medicare claim processing errors across US healthcare operations."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Full Stack Developer & AI Builder with fast learning and problem-solving mindset",
+      "company": "College Projects & Personal Development",
+      "period": "2023 - Present",
+      "description": "Built modern full-stack applications focused on scalable backend systems, responsive frontend experiences, AI integrations, and solving real-world problems through college and self-driven projects.",
+      "projects": [
+        {
+          "name": "OneAI",
+          "detail": "OneAI is a research-focused Personal AI Operating System designed to explore long-term memory, memoization, Retrieval-Augmented Generation (RAG), and scalable AI architectures inspired by modern data platforms such as Snowflake, providing a foundation for intelligent agents, knowledge management, and personalized AI workflows and it also combines LLM-powered chat, web search, and tool execution in a unified platform, built with FastAPI, React, PostgreSQL, Redis, and OpenRouter for future memory and agent-based workflows."
+        },
+        {
+          "name": "Portfolio Website with AI Chatbot that answers questions about skills, projects, and professional experience dynamically.",
+          "detail": "Built a portfolio chatbot with a RAG pipeline — stored portfolio data in ChromaDB, retrieved relevant chunks on each query, and passed them as context to the LLM for source-grounded answers, cuts prompt size compared to sending full data on every call. Deployed full-stack with React frontend and Node.js/Express backend; handles real-time queries with  conversational follow-up support."
+        },
+        {
+          "name": "NewsBucket",
+          "detail": "Built an AI-powered news platform using React.js and FastAPI with LLM integration for intelligent news interaction, smart assistance, and enhanced user engagement."
+        },
+        {
+          "name": "QuantFit",
+          "detail": "Developed an online fitness tracker platform with workout management, progress tracking, and user-focused health features."
+        },
+        {
+          "name": "PulsePoint News",
+          "detail": "Developed a modern news website using the MERN stack with features such as article management, category-based browsing, responsive UI, and backend API integration."
+        },
+        {
+          "name": "Skill-Link",
+          "detail": "Built a job-connect platform for village workers using Node.js, Express.js, EJS, JavaScript, and MongoDB with search by zip code and service type."
+        },
+        {
+          "name": "Twitter Clone",
+          "detail": "Created a social media platform inspired by Twitter using the MERN stack with features like authentication, posting updates, likes, comments, and user profiles."
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "title": "Bachelor of Engineering in Computer Science",
+      "institution": "Chitkara University",
+      "period": "Aug 2022 - June 2026",
+      "description": "Graduated with 9.54 CPGA without any backlog in any of the semesters. Coursework focused on Data Structures, Algorithms, Web Development, and Database Management."
+    },
+    {
+      "id": 2,
+      "title": "Trident Public School",
+      "institution": "CBSE",
+      "period": "April 2019 - March 2021",
+      "description": "Completed secondary education with a focus on PCM (Physics, Chemistry, Mathematics) with 81% marks."
+    },
+    {
+      "id": 3,
+      "title": "City Central High School",
+      "institution": "CBSE",
+      "period": "July 2011 - March 2019",
+      "description": "Completed secondary education with a focus on subjects like science, social science, english, hindi and mathematics with overall 83.4% marks and highest marks in mathematics was 95%."
+    }
+  ],
+  "certifications": [
+    {
+      "id": 11,
+      "title": "Internship Certificate - Software AI Engineering",
+      "issuer": "Innova Solutions",
+      "date": "March 2026",
+      "link": "https://drive.google.com/file/d/1lFuYnXRkqd1wql44t8UT_hID6jlIMbxV/view?usp=drive_link"
+    },
+    {
+      "id": 1,
+      "title": "IBM AI Engineering",
+      "issuer": "IBM",
+      "date": "Oct 2025",
+      "link": "https://coursera.org/share/6694ef8ba5f4ffd5e7e8e982eab43931"
+    },
+    {
+      "id": 2,
+      "title": "AI for Scientific Research",
+      "issuer": "LearnQuest",
+      "date": "Feb 2026",
+      "link": "https://coursera.org/share/95a6e85d9f83152e674d6e5e3c4682ce"
+    },
+    {
+      "id": 3,
+      "title": "Software Product Management",
+      "issuer": "University of Alberta",
+      "date": "Feb 2026",
+      "link": "https://coursera.org/share/f6ba7d917f28fc765b5398bd1b84e8f2"
+    },
+    {
+      "id": 4,
+      "title": "Introduction to Cybersecurity",
+      "issuer": "Cisco Networking Academy",
+      "date": "Nov 2023",
+      "link": "https://www.credly.com/badges/c50e678c-c0c0-4a37-8fa7-8e1f35a362cf"
+    },
+    {
+      "id": 5,
+      "title": "Global Disaster Risk Reduction and Management Pathway",
+      "issuer": "Kaya",
+      "date": "Oct 2024",
+      "link": "https://drive.google.com/file/d/1vqkt_LGYII0WdQVvAp5fxGBij6Tf6K7v/view"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=800&q=80",
+      "name": "NewsBucket",
+      "description": "An AI-powered news platform built with React.js and FastAPI featuring LLM integration for smart news interaction, intelligent assistance, and engaging user experiences.",
+      "github": "https://github.com/satyamchy/NewsBucket",
+      "live": "https://news-bucket-omega.vercel.app/",
+      "tech": [
+        "React",
+        "FastAPI",
+        "Python",
+        "LLM",
+        "Web Search"
+      ]
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80",
+      "name": "Portfolio Website with AI Chatbot",
+      "description": "A modern portfolio website built with React and Tailwind CSS featuring an AI chatbot that dynamically answers questions about skills, projects, and experience.",
+      "github": "https://github.com/satyamchy/My-Portfolio",
+      "live": "https://satyam-portfolio-xi.vercel.app/",
+      "tech": [
+        "React",
+        "Tailwind",
+        "Vite",
+        "Langchain",
+        "ChromaDB",
+        "AI Chatbot",
+        "FastAPI",
+        "LLM"
+      ]
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80",
+      "name": "QuantFit",
+      "description": "An online fitness tracker platform with workout planning, progress monitoring, and user-focused health management features.",
+      "github": "https://github.com/adisrc/quantum-fit",
+      "live": "https://quantfit.vercel.app/",
+      "tech": [
+        "React",
+        "Node.js",
+        "Express",
+        "Tailwind",
+        "MongoDB",
+        "PoseNet"
+      ]
+    },
+    {
+      "id": 4,
+      "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80",
+      "name": "PulsePoint News",
+      "description": "A MERN stack news website with article management, category browsing, responsive design, and backend API integration.",
+      "github": "https://github.com/satyamchy/Pulse-Point",
+      "live": "",
+      "tech": [
+        "MongoDB",
+        "Express",
+        "React",
+        "Tailwind",
+        "Node.js"
+      ]
+    },
+    {
+      "id": 5,
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+      "name": "Skill-Link",
+      "description": "A platform connecting village workers with clients using search by zip code and service type for easier local job discovery.",
+      "github": "https://github.com/shambsinha/SkillLink",
+      "live": "https://skill-link-3jtd.onrender.com/dashboard",
+      "tech": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "EJS"
+      ]
+    },
+    {
+      "id": 6,
+      "image": "https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=800&q=80",
+      "name": "Twitter Clone",
+      "description": "A social media platform inspired by Twitter featuring authentication, posting updates, likes, comments, and user profiles.",
+      "github": "https://github.com/satyamchy/Twitter-Clone",
+      "live": "",
+      "tech": [
+        "MongoDB",
+        "Express",
+        "React",
+        "Node.js"
+      ]
+    }
+  ],
+  "additional_info": [
+    {
+      "title": "Professional Interests",
+      "content": "Satyam is deeply interested in Artificial Intelligence, Large Language Models (LLMs), Data Engineering, Cloud Systems, and Full Stack Development. He enjoys building products that combine intelligent automation with practical real-world use cases."
+    },
+    {
+      "title": "Learning Mindset",
+      "content": "He is highly curious about emerging technologies and continuously upgrades his skills through hands-on projects, certifications, experimentation, and self-learning. He adapts quickly to new tools, frameworks, and evolving industry trends."
+    },
+    {
+      "title": "Problem Solving Philosophy",
+      "content": "Satyam believes in learning by building. His approach focuses on creating clean, scalable, and impactful solutions rather than only studying theory. He values consistency, ownership, and practical execution."
+    },
+    {
+      "title": "Career Motivation",
+      "content": "He is motivated to work in environments where he can solve meaningful problems, contribute to strong engineering teams, and grow across software, data, and AI domains."
+    },
+    {
+      "title": "Location Background",
+      "content": "Originally from Bihar, Satyam has professional work exposure in Hyderabad and is currently living in Mohali, India."
+    },
+    {
+      "title": "Work Style",
+      "content": "He is known for being focused, disciplined, and determined when working on technical goals. Once committed to a task, he prefers finishing it with quality and ownership."
+    },
+    {
+      "title": "Personal Life",
+      "content": "Satyam is basically a mumma boy and loves spending time with his family. His father is a farmer and mother is a homemaker. He has a younger brother who is currently pursuing his studies in agriculture. He values family time and enjoys connecting with loved ones."
+    },
+    {
+      "title": "Hobbies & Interests",
+      "content": "Satyam enjoys exploring new technologies, building side projects, reading tech blogs, and staying updated with AI advancements. He also likes outdoor activities, sports like cricket, table tennis, tennis, yoga, fitness, and spending quality time with friends and family."
+    }
+  ]
+}
