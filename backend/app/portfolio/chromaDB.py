@@ -1,7 +1,7 @@
-"""
-ingest.py — Loads portfolio data.json into ChromaDB.
-Run once (or re-run to refresh): python ingest.py
-"""
+# """
+# ingest.py — Loads portfolio data.json into ChromaDB.
+# Run once (or re-run to refresh): python ingest.py
+# """
 import chromadb
 from chromadb.utils import embedding_functions
 from pathlib import Path
