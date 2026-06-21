@@ -23,9 +23,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(newsbucket_router, prefix="/v1")
-app.include_router(portfolio_route, prefix="/api")
-app.include_router(vectorDB_chat_route, prefix="/api/messages")
+app.include_router(newsbucket_router, prefix="/v1")  # news bucket API
+app.include_router(portfolio_route, prefix="/api")  # portfolio API where context and chat are are both coming from rest api
+app.include_router(vectorDB_chat_route, prefix="/api/messages") # vectorDB chat API where only chat is coming from api request and context is coming from vectorDB
 
 # Health check
 @app.get("/")
