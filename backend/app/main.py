@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.newsBucket import router as newsbucket_router
 from app.routes.portfolio_route import router as portfolio_route
-from app.routes.vectorDB_chat_route import router as vectorDB_chat_route
+# from app.routes.vectorDB_chat_route import router as vectorDB_chat_route
 from apscheduler.schedulers.background import BackgroundScheduler
 import requests
 scheduler = BackgroundScheduler()
